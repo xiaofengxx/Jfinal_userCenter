@@ -1,0 +1,6 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/
+Jfinal_userCenter.iml
+target/
+testLogin/target/
+testLogin/testLogin.iml
