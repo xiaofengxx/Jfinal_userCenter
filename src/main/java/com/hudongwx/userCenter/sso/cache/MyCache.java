@@ -34,7 +34,7 @@ public class MyCache implements SSOCache {
      *
      * @param key     关键词
      * @param token   SSO票据
-     * @param expires
+     * @param expires 过期时间（延时心跳时间）
      */
     @Override
     public boolean set(String key, Token token, int expires) {

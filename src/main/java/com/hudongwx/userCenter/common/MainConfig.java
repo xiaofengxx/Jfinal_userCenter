@@ -16,7 +16,7 @@ public class MainConfig extends JFinalConfig {
     /**
      * Config constant
      *
-     * @param me
+     * @param me 核心配置
      */
     @Override
     public void configConstant(Constants me) {
@@ -27,7 +27,7 @@ public class MainConfig extends JFinalConfig {
     /**
      * Config route
      *
-     * @param me
+     * @param me 路由配置
      */
     @Override
     public void configRoute(Routes me) {
@@ -39,7 +39,7 @@ public class MainConfig extends JFinalConfig {
     /**
      * Config plugin
      *
-     * @param me
+     * @param me 插件配置
      */
     @Override
     public void configPlugin(Plugins me) {
@@ -49,7 +49,7 @@ public class MainConfig extends JFinalConfig {
     /**
      * Config interceptor applied to all actions.
      *
-     * @param me
+     * @param me 拦截器配置
      */
     @Override
     public void configInterceptor(Interceptors me) {
@@ -59,7 +59,7 @@ public class MainConfig extends JFinalConfig {
     /**
      * Config handler
      *
-     * @param me
+     * @param me 处理器配置
      */
     @Override
     public void configHandler(Handlers me) {
