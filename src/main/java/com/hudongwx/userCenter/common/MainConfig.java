@@ -1,7 +1,9 @@
 package com.hudongwx.userCenter.common;
 
-import com.hudongwx.userCenter.controller.IndexController;
-import com.hudongwx.userCenter.sso.plugin.KissoJFinalPlugin;
+import com.hudongwx.userCenter.controller.LoginController;
+import com.hudongwx.userCenter.controller.LogoutController;
+import com.hudongwx.userCenter.controller.VerifyCodeController;
+import com.hudongwx.userCenter.sso.plugin.KissoJfinalPlugin;
 import com.jfinal.config.*;
 import com.jfinal.core.JFinal;
 import com.jfinal.kit.PropKit;
@@ -29,7 +31,9 @@ public class MainConfig extends JFinalConfig {
      */
     @Override
     public void configRoute(Routes me) {
-        me.add("/", IndexController.class, "/common");
+        me.add("login", LoginController.class,"/common");
+        me.add("logout", LogoutController.class);
+        me.add("verify", VerifyCodeController.class);
     }
 
     /**
@@ -39,7 +43,7 @@ public class MainConfig extends JFinalConfig {
      */
     @Override
     public void configPlugin(Plugins me) {
-        me.add(new KissoJFinalPlugin());
+        me.add(new KissoJfinalPlugin());
     }
 
     /**
@@ -63,6 +67,6 @@ public class MainConfig extends JFinalConfig {
     }
 
     public static void main(String[] args) {
-        JFinal.start("src/main/webapp", 8092, "/", 5);
+        JFinal.start("src/main/webapp", 8080, "/", 5);
     }
 }
