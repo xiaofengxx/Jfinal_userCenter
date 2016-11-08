@@ -10,7 +10,7 @@ import com.jfinal.render.ViewType;
 /**
  * Created by wuhongxu on 2016/11/7 0007.
  */
-public class MainConfig extends JFinalConfig {
+public class DemoConfig extends JFinalConfig {
     /**
      * Config constant
      *
@@ -63,6 +63,6 @@ public class MainConfig extends JFinalConfig {
     }
 
     public static void main(String[] args) {
-        JFinal.start("src/main/webapp", 8092, "/", 5);
+        JFinal.start("testLogin/src/main/webapp", 8092, "/", 5);
     }
 }
